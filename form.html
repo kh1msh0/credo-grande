@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Form-v10 by Colorlib</title>
+    <!-- Mobile Specific Metas -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <!-- Font-->
+    <link rel="stylesheet" type="text/css" href="css/montserrat-font.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css"
+    />
+    <!-- Main Style Css -->
+    <link rel="stylesheet" href="css/formstyle.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .slidecontainer {
+        width: 100%;
+      }
+
+      .slider {
+        -webkit-appearance: none;
+        width: 100%;
+        height: 20px;
+        border-radius: 10px;
+        background: #dcdad3;
+        outline: none;
+        -webkit-transition: 0.2s;
+        transition: opacity 0.2s;
+      }
+
+      .slider:hover {
+        opacity: 1;
+      }
+
+      .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 24px;
+        height: 24px;
+
+        background-image: url("https://svgur.com/i/BRy.svg");
+        background-color: #23d160;
+        border-radius: 50%;
+        background-size: cover;
+        cursor: pointer;
+      }
+
+      .slider::-moz-range-thumb {
+        width: 24px;
+        height: 24px;
+
+        background-image: url("https://svgur.com/i/BRy.svg");
+        background-color: #23d160;
+        border-radius: 50%;
+        background-size: cover;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body class="form-v10">
+    <!-- <a href="slider.html">slider</a> -->
+
+    <div class="page-content">
+      <div class="logo">
+        <a class="" href="#" >
+            <img src="https://s3.eu-central-1.amazonaws.com/chocopie/logos/credito-grande.png" width="203"
+                 style="max-height: 15rem;">
+        </a>
+      </div>
+
+      <div class="logo1">
+        <a class="" href="#" >
+            <img src="./img/creditogrande.png" width="50"
+                 style="max-height: 15rem;">
+        </a>
+      </div>
+
+
+      <div class="form-v10-content">
+        <form class="form-detail" action="#" method="post" id="myform">
+          <div class="form-left">
+            <!-- <div class="columns" id="form"> -->
+                <h1 class="title">Para obtener una oferta uinique adaptada a su situación financiera, complete este
+                    formulario.</h1>
+                <h3 class="subtitle">Sus datos se utilizarán para intentar ofrecerle préstamos y servicios con las tarifas
+                    más bajas posibles.</h3>
+
+            <h2>La Cantidad</h2>
+
+            <div
+              class="column"
+              style="margin-bottom: 24px;
+										padding-left: 60px;
+									    padding-right: 50px;
+									    position: relative;"
+            >
+              <div class="slidecontainer">
+                <input
+                  type="range"
+                  min="1"
+                  max="20"
+                  value="2"
+                  class="slider"
+                  id="amountSlider"
+                  required
+                />
+                <div style="padding-top: 10px;">
+                  <p style="color:white" class="tag is-light">
+                    Total: &nbsp; <span id="totalAmount"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <h2>Duración</h2>
+            <div
+              class="column"
+              style="margin-bottom: 24px;
+										padding-left: 60px;
+									    padding-right: 50px;
+									    position: relative;"
+            >
+              <div class="slidecontainer">
+                <input
+                  type="range"
+                  min="1"
+                  max="36"
+                  value="1"
+                  class="slider"
+                  id="dateSlider"
+                  required
+                />
+                <div style="padding-top: 10px;">
+                  <p class="tag is-light" style="color:white">
+                    El mes: &nbsp; <span id="totalDate"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+     
+          </div>
+          <div class="form-right">
+            <h2>Detalles de contacto</h2>
+            <div class="form-row">
+              <input
+                type="text"
+                name="street"
+                class="street input"
+                id="street"
+                placeholder="Tu Nombre"
+                required
+              />
+            </div>
+            <div class="form-row">
+              <input
+                type="text"
+                name="additional"
+                class="additional input"
+                id="additional"
+                placeholder="Apellido"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <!-- <div class="form-row form-row-1">
+                <input
+                  type="text"
+                  name="zip"
+                  class="zip input"
+                  id="zip"
+                  placeholder="Zip Code"
+                  required
+                />
+              </div> -->
+              <div class="form-row form-row-12 form-row-1">
+                <select required name="day">
+                  <option disabled selected>Day</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
+                  <option value="31">31</option>
+                </select>
+                <span class="select-btn">
+                  <i class="zmdi zmdi-chevron-down"></i>
+                </span>
+              </div>
+
+              <div class="form-row form-row-2 form-row-21 ">
+                <select required name="month">
+                  <option disabled selected>Month</option>
+                  <option value="1">January</option>
+                  <option value="2">February</option>
+                  <option value="3">March</option>
+                  <option value="4">April</option>
+                  <option value="5">May</option>
+                  <option value="6">June</option>
+                  <option value="7">July</option>
+                  <option value="8">August</option>
+                  <option value="9">September</option>
+                  <option value="10">October</option>
+                  <option value="11">November</option>
+                  <option value="12">December</option>
+                </select>
+                <span class="select-btn">
+                  <i class="zmdi zmdi-chevron-down"></i>
+                </span>
+              </div>
+
+              <div class="form-row form-row-2 form-row-21">
+                <select required name="year">
+                  <option disabled selected>Year</option>
+                  <option value="2000">2000</option>
+                  <option value="1999">1999</option>
+                  <option value="1998">1998</option>
+                  <option value="1997">1997</option>
+                  <option value="1996">1996</option>
+                  <option value="1995">1995</option>
+                  <option value="1994">1994</option>
+                  <option value="1993">1993</option>
+                  <option value="1992">1992</option>
+                  <option value="1991">1991</option>
+                  <option value="1990">1990</option>
+                  <option value="1989">1989</option>
+                  <option value="1988">1988</option>
+                  <option value="1987">1987</option>
+                  <option value="1986">1986</option>
+                  <option value="1985">1985</option>
+                  <option value="1984">1984</option>
+                  <option value="1983">1983</option>
+                  <option value="1982">1982</option>
+                  <option value="1981">1981</option>
+                  <option value="1980">1980</option>
+                  <option value="1979">1979</option>
+                  <option value="1978">1978</option>
+                  <option value="1977">1977</option>
+                  <option value="1976">1976</option>
+                  <option value="1975">1975</option>
+                  <option value="1974">1974</option>
+                  <option value="1973">1973</option>
+                  <option value="1972">1972</option>
+                  <option value="1971">1971</option>
+                  <option value="1970">1970</option>
+                  <option value="1969">1969</option>
+                  <option value="1968">1968</option>
+                  <option value="1967">1967</option>
+                  <option value="1966">1966</option>
+                  <option value="1965">1965</option>
+                  <option value="1964">1964</option>
+                  <option value="1963">1963</option>
+                  <option value="1962">1962</option>
+                  <option value="1961">1961</option>
+                  <option value="1960">1960</option>
+                  <option value="1959">1959</option>
+                  <option value="1958">1958</option>
+                  <option value="1957">1957</option>
+                  <option value="1956">1956</option>
+                  <option value="1955">1955</option>
+                  <option value="1954">1954</option>
+                  <option value="1953">1953</option>
+                  <option value="1952">1952</option>
+                  <option value="1951">1951</option>
+                  <option value="1950">1950</option>
+                  <option value="1949">1949</option>
+                </select>
+                <span class="select-btn">
+                  <i class="zmdi zmdi-chevron-down"></i>
+                </span>
+              </div>
+            </div>
+            <!-- <div class="form-row">
+              <select name="country">
+                <option value="country">Country</option>
+                <option value="Vietnam">Vietnam</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="India">India</option>
+              </select>
+              <span class="select-btn">
+                <i class="zmdi zmdi-chevron-down"></i>
+              </span>
+            </div> -->
+            <div class="form-row">
+              <input
+                type="text"
+                name="your_email"
+                id="your_email"
+                class="input-text input"
+                required
+                pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}"
+                placeholder="E-Mail"
+              />
+            </div>
+
+            <div class="form-row ">
+              <input
+                type="text"
+                name="phone"
+                value="+34"
+                pattern="(?=.*\d0-9]{12}"
+                class="phone input"
+                id="phone"
+                placeholder="Tu Número De Teléfono Móvil"
+                required
+              />
+            </div>
+
+            <!-- <div class="form-row">
+              <input
+                type="text"
+                name="ID"
+                
+                class="input-text input"
+                required
+                pattern=""
+                placeholder="ID"
+              />
+            
+            </div> -->
+
+
+          
+       <div style="display: flex; flex-wrap: wrap;" >
+        <div  class="check">   
+            <div class="form-checkbox">
+              <label class="container">
+                <p>
+                    Educación   
+                </p>
+                <input type="checkbox" name="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+             <div class="form-checkbox">
+                <label class="container">
+                  <p>
+                      Asistencia Sanitaria   
+                  </p>
+                  <input type="checkbox" name="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="form-checkbox">
+                  <label class="container">
+                    <p>
+                        Financiación    
+                    </p>
+                    <input type="checkbox" name="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+              </div>
+
+              <div style="max-width:50%">
+                <div class="form-checkbox">
+                    <label class="container">
+                      <p>
+                          Entretenimiento   
+                      </p>
+                      <input type="checkbox" name="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="form-checkbox">
+                      <label class="container">
+                        <p>
+                            Personal
+                        </p>
+                        <input type="checkbox" name="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                    </div>
+                  </div>
+
+
+
+            <div class="form-row-last">
+              <input
+                id="continue"
+                type="submit"
+                name="register"
+                class="register"
+                value="Obtener el mejor crédito"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="application/javascript"></script>
+
+    <style>
+        label, .title {
+            text-transform: capitalize;
+        }
+    </style>
+    <script>
+        let submited = getCookie('hasSubmittedForm');
+        if (submited) {
+            window.location.href = getRedirectUrl();
+        }
+        var slider = document.getElementById("amountSlider");
+        var output = document.getElementById("totalAmount");
+        output.innerHTML = slider.value * 250 + ' €';
+
+        slider.oninput = function () {
+            output.innerHTML = this.value * 250 + ' €';
+        }
+
+        var slider2 = document.getElementById("dateSlider");
+        var output2 = document.getElementById("totalDate");
+        output2.innerHTML = slider2.value;
+
+        slider2.oninput = function () {
+            output2.innerHTML = this.value;
+        }
+
+        $("form").submit(function (e) {
+            e.preventDefault();
+            var formdata = $(this).serializeArray();
+            $('input').each(function () {
+                $(this).removeClass('is-danger');
+            });
+
+            var data = {};
+            for (var i = 0; i < formdata.length; i++) {
+                var row = formdata[i];
+                data[row.name] = row.value;
+            }
+            var url = 'https://iamdataninja.com/form.php';
+            data.loan_amount = parseInt($('#totalAmount').text());
+            data.loan_duration = parseInt($('#totalDate').text());
+            submitForm();
+
+
+            $.ajax({
+                url,
+                data,
+                type: 'POST',
+                success: function (data) {
+                    console.log(data);
+                    if (!data.success) {
+                        $('#continue').removeClass('is-loading');
+                        $('#continue').html('<span class="has-text-danger"><i class="fas fa-refresh"></i> Por favor revise su formulario y envíelo nuevamente</span>');
+
+                        if (data.field) {
+                            $('input[name="' + data.field + '"]').addClass('is-danger');
+                        }
+                        return;
+                    }
+                    let cname = "hasSubmittedForm";
+                    let cvalue = 1;
+                    let exdays = 90;
+                    let d = new Date();
+                    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+                    let expires = "expires=" + d.toUTCString();
+                    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+
+                    setTimeout(function () {
+                        $('#continue').removeClass('is-loading');
+                        $('#continue').html('<span class="has-text-success"><i class="fas fa-check"></i> Solicitud completada. Continuación</span>')
+                        setTimeout(function () {
+                            var redirecturl = getRedirectUrl();
+
+                            if (redirecturl) {
+                                window.location.href = redirecturl;
+                            }
+                        }, 1000);
+                    }, 3000);
+                }
+            });
+
+        });
+
+        function submitForm() {
+            $('#continue').blur();
+            $('#continue').addClass('is-loading');
+        }
+
+        function getUrlParam(param) {
+            var url_string = window.location.href;
+            var url = new URL(url_string);
+            var c = url.searchParams.get(param);
+            return c;
+        }
+
+
+        function getCookie(cname) {
+            var ca = decodeURIComponent(document.cookie).split(';');
+
+            if (cname.indexOf('[]') > 0) {
+                var returnVAlue = [];
+                var nameArray = cname.replace("[]", "");
+                for (var i = 0; i < ca.length; i++) {
+                    var c = ca[i];
+                    // console.log(c);
+                    while (c.charAt(0) == ' ') {
+                        c = c.substring(1);
+                    }
+                    if (c.indexOf(nameArray) >= 0) {
+                        var valueString = c.substr(nameArray.length, c.length);
+
+                        var valueStringSlit = valueString.split('=');
+                        valueStringSlit[0] = valueStringSlit[0].substr(1, (valueStringSlit[0].length - 2));
+                        //    console.log(valueStringSlit);
+
+                        returnVAlue.push(valueStringSlit);
+                    }
+                }
+            } else {
+                var returnVAlue = '';
+                var name = cname + "=";
+
+                for (var i = 0; i < ca.length; i++) {
+                    var c = ca[i];
+                    // console.log(c);
+                    while (c.charAt(0) == ' ') {
+                        c = c.substring(1);
+                    }
+                    if (c.indexOf(name) == 0) {
+                        returnVAlue = c.substr(name.length, c.length);
+                    }
+                }
+            }
+            if (returnVAlue != '') {
+                return returnVAlue;
+            }
+            return null;
+        }
+
+
+        function getRedirectUrl() {
+            var possiblecompanies = {
+                9: 'https://track.adtraction.com/t/t?a=1219443497&as=1307347776&t=2&tk=1&epi=__SUBID__',
+                1: 'https://track.adtraction.com/t/t?a=1219443497&as=1307347776&t=2&tk=1&epi=__SUBID__'
+            };
+            var redirecturl = null;
+            var companyid = getUrlParam('company');
+            var cookie = getCookie('data');
+
+            if (companyid == 9) {
+                url = possiblecompanies[1];
+            } else {
+                url = possiblecompanies[9];
+            }
+
+            return url.replace('__SUBID__', cookie);
+        }
+
+        // $("html").mouseleave(function () {
+        //     $("#exitModal").addClass('is-active');
+        // });
+        //
+        //
+        // $('#destroyPopup').click(function (e) {
+        //     $('#exitModal').hide();
+        // });
+
+    </script>
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+            integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+    <script>
+        window.addEventListener("load", function(){
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#efefef",
+                        "text": "#404040"
+                    },
+                    "button": {
+                        "background": "#8ec760",
+                        "text": "#ffffff"
+                    }
+                },
+                "theme": "classic",
+                "content": {
+                    "message": "Utilizamos cookies para asegurarnos de que tenga la mejor experiencia en nuestro sitio web. Al continuar usando nuestro sitio web, estará de acuerdo con nuestro uso de cookies.",
+                    "dismiss": "Lo tengo!",
+                    "link": "Lee mas",
+                    "href": "#"
+                }
+            })});
+    </script>
+  </body>
+</html>
