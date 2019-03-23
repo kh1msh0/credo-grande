@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1.0"
+    />
+    <title>Starter Template - Materialize</title>
+
+    <!-- CSS  -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="css/materialize.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen,projection"
+    />
+    <link
+      href="css/style.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen,projection"
+    />
+    <link
+      href="https://as.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="manifest" href="/manifest.json" />
+    <script
+      src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"
+      async=""
+    ></script>
+    <script>
+      var OneSignal = window.OneSignal || [];
+      OneSignal.push(function() {
+        OneSignal.init({
+          appId: "3561d403-fbf3-4932-91fb-c060503ac906"
+        });
+        OneSignal.popoverShown(function() {
+          alert("sdsdf");
+        });
+      });
+    </script>
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-135664829-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag("js", new Date());
+      gtag("config", "UA-135664829-1");
+    </script>
+
+    <meta
+      name="keywords"
+      content="prestamos rapidos 100 euros, prestamos rapidos 500 euros, prestamos rapidos 400 euros, prestamos rapidos 1000 euros, prestamos rapidos 2000 euros, prestamos rapidos 4000 euros, prestamos rapidos 3000 euros,, prestamos, rapidos, euros,, prestamos, rapidos, euros,, prestamos, rapidos, euros,, prestamos, rapidos, 1000, euros,, prestamos, rapidos, 2000, euros,, prestamos, rapidos, 4000, euros,, prestamos, rapidos, 3000, euros,"
+    />
+  </head>
+  <style>
+    .logo {
+      display: flex;
+      margin: 1%;
+    }
+    .img {
+      display: flex;
+      justify-content: center;
+      margin: 7% 0% 3%;
+    }
+    .tab {
+      
+      display: flex;
+      justify-content: space-between;
+    }
+    .tab > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .tab > div > p {
+      font-weight: 600;
+      color: #707070;
+    }
+    .tab > div > h5 {
+      margin-bottom: 0;
+      font-size: 20px;
+      font-weight: 800;
+    }
+    .button {
+      display: flex;
+      justify-content: center;
+      margin: 5% 10% 12%;
+      height: 40px;
+    }
+    .button > a {
+      -webkit-align-self: center;
+      align-self: center;
+      color: white;
+      font-weight: 600;
+      width: 100%;
+
+      background-color: #6b81ed;
+      border-radius: 50px;
+      -webkit-box-shadow: 0px 6px 14px rgba(107, 129, 237, 0.267);
+      box-shadow: 0px 6px 14px rgba(107, 129, 237, 0.267);
+    }
+    .card {
+      margin: 1%;
+      border-radius: 6px;
+      -webkit-box-shadow: 0px 6px 14px rgba(107, 129, 237, 0.267);
+      box-shadow: 0px 6px 14px rgba(107, 129, 237, 0.267);
+    }
+    .card:hover {
+      -webkit-box-shadow: 0px 6px 14px rgba(59, 82, 194, 0.753);
+      box-shadow: 0px 6px 14px rgba(59, 82, 194, 0.753);
+    }
+    .card.width{
+      min-width: 300px;
+    }
+    .btn:hover,
+    .btn-large:hover,
+    .btn-small:hover {
+      background-color: #324bcc;
+    }
+  
+
+    .overlay {
+    top:0;
+		height: 100%;
+		position: absolute ;
+		width: 100%;
+		background: rgba(0, 0, 0, 0.78);
+		z-index: 999999999;
+		align-items: center;
+		justify-content: center;
+
+    
+	}
+	
+  .overlay .cards{
+    width: 100%;
+position: absolute;
+display: flex;
+align-items: center;
+justify-content: center;
+  }
+	.overlayed {
+    overflow: hidden;
+
+  }
+  .backgroundo{
+    position: absolute;
+    justify-content: center;
+    align-self: center;
+    align-content :center; 
+    width: 40%;
+    height: 50%;
+    background-color: #ede8f0;
+    border-radius: 10px;
+  }
+  
+.buttono{
+  height: 70%;
+  display:flex; 
+  flex-direction: column;   
+  justify-content: flex-end; 
+}
+
+
+.containero{
+  margin-top:7%;
+ }
+ .container1{
+  max-width: 900px;
+  background-color: #1f1e3a;
+  padding: 1% 4%;
+  border-radius: 10px;
+ }
+
+
+ 
+ .texto{
+   display: flex;
+   justify-content: center;
+   color: white
+ }
+
+ #mouse{
+  width:30px;
+   position:absolute;
+   z-index: 9999999;
+   transition: 0.1s all;
+   display: none
+   
+ }
+
+ #but1, #but2 {
+        transition: 1ms background-color;
+        transition-delay: 0.1s;
+    }
+ 
+ @media only screen and (max-width: 600px){
+   .overlay{
+     display: none;
+   }
+ }
+
+
+    @media only screen and (max-width: 701px){
+      .overlay .cards{
+        width: 100%
+      }
+      .tab.o {
+      display: flex;
+      flex-direction: column;
+    }
+    .tab.o >div {
+      display: flex;
+      flex-direction: row;
+    }
+    .www{
+      min-width: 150px;
+    }
+    .tab > div > h5.o{
+      margin-bottom: 0;
+      font-size: 30px;
+      font-weight: 800;
+    }
+    .tab > div > p.o{
+      font-weight: 400;
+      color: #707070;
+    }
+    }
+  </style>
+  <body style="background-color: #fff">
+    
+
+<div id="overlaydiv" style="display: none" class="overlay" onclick="hideOverlay()">
+  
+   
+<div class="containero">
+  
+<div class="container container1 ">
+  
+  <div class="texto">
+    <p >Хабарландыруға мүмкіндік беретін </p>
+  </div>
+
+  <div class="section">
+      
+    <div class="row">
+        <div class="col s12 m6 l6   card cardclick" href="form.html">
+            <div class="icon-block">
+              <div class="img">
+                <img
+                  width="144"
+                  height="70"
+                  src="https://minicreditos365.com/logo1241512112.png"
+                  alt=""
+                />
+              </div>
+              <div class="tab">
+                <div>
+                  <h5 class="light-blue-text">
+                    <i class="material-icons">attach_money</i>
+                  </h5>
+                  <p class="center">3000</p>
+                </div>
+                <div>
+                  <h5 class="light-blue-text" style="font-weight: 600">
+                    %
+                  </h5>
+                  <p class="center">primer gratis 0%</p>
+                </div>
+                <div>
+                  <h5 class="light-blue-text">
+                    <i class="material-icons">account_circle</i>
+                  </h5>
+                  <p class="center">18-70</p>
+                </div>
+              </div>
+
+              <div class="button  " >
+                  
+                <a id="but1" href="#0" class="waves-effect waves-light btn-small  ">                  
+                  SOLICITALO YA</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col s12 m6 l6   card" href="form.html">
+              <div class="icon-block">
+                <div class="img">
+                  <img
+                    width="144"
+                    height="70"
+                    src="https://minicreditos365.com/logo1241512112.png"
+                    alt=""
+                  />
+                </div>
+                <div class="tab">
+                  <div>
+                    <h5 class="light-blue-text">
+                      <i class="material-icons">attach_money</i>
+                    </h5>
+                    <p class="center">3000</p>
+                  </div>
+                  <div>
+                    <h5 class="light-blue-text" style="font-weight: 600">
+                      %
+                    </h5>
+                    <p class="center">primer gratis 0%</p>
+                  </div>
+                  <div>
+                    <h5 class="light-blue-text">
+                      <i class="material-icons">account_circle</i>
+                    </h5>
+                    <p class="center">18-70</p>
+                  </div>
+                </div>
+  
+                <div class="button " >
+                  <a href="#0" id="but2" class="waves-effect waves-light btn-small ">SOLICITALO YA</a
+                  >
+                </div>
+              </div>
+            </div>
+            
+    </div>
+    <div class="texto" >
+        <div class="flex ">
+            <a href="#0" class="bttn-dark">Continue</a>
+          </div>
+      </div>
+  </div>
+
+</div>
+</div>
+<img  id="mouse" src="./8e158bf4e37c033bbfa319a19b425b9d-arrow-outline-cursor-by-vexels.png"/>
+
+    </div>
+    
+      
+
+
+    <div class="container">
+      <div class="logo ">
+        <a href="">
+          <img
+            style="float:left; margin-right:15px; margin-top:10px;"
+            id="logo"
+            src="https://s3.eu-central-1.amazonaws.com/chocopie/logos/credito-grande.png"
+            width="190px"
+          />
+        </a>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="sectio">
+        <!--   Icon Section   -->
+        <div class="row">
+          <div class="col s12 m6 l3   card" href="form.html">
+            <div class="icon-block">
+              <div class="img">
+                <img
+                  width="144"
+                  height="70"
+                  src="https://minicreditos365.com/logo1241512112.png"
+                  alt=""
+                />
+              </div>
+              <div class="tab">
+                <div>
+                  <h5 class="light-blue-text">
+                    <i class="material-icons">attach_money</i>
+                  </h5>
+                  <p class="center">3000</p>
+                </div>
+                <div>
+                  <h5 class="light-blue-text" style="font-weight: 600">
+                    %
+                  </h5>
+                  <p class="center">primer gratis 0%</p>
+                </div>
+                <div>
+                  <h5 class="light-blue-text">
+                    <i class="material-icons">account_circle</i>
+                  </h5>
+                  <p class="center">18-70</p>
+                </div>
+              </div>
+
+              <div class="button">
+                <a href="form.html" class="waves-effect waves-light btn-small btn1 "
+                  >SOLICITALO YA</a
+                >
+                <!-- <a>SOLICITALO YA</a> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- test version 1 -->
+
+          <div class="col s12 m6 l3   card">
+            <div class="icon-block">
+              <div class="img">
+                <img
+                  width="144"
+                  height="70"
+                  src="https://minicreditos365.com/logo1.png"
+                  alt=""
+                />
+              </div>
+              <div class="tab">
+                <div>
+                  <h5 class="light-blue-text">
+                    <i class="material-icons">attach_money</i>
+                  </h5>
+                  <p class="center">3000</p>
+                </div>
+                <div>
+                  <h5 class="light-blue-text" style="font-weight: 600">
+                    %
+                  </h5>
+                  <p class="center">primer gratis 0%</p>
+                </div>
+                <div>
+                  <h5 class="light-blue-text">
+                    <i class="material-icons">account_circle</i>
+                  </h5>
+                  <p class="center">18-70</p>
+                </div>
+              </div>
+
+              <div class="button">
+                <a class="waves-effect waves-light btn-small btn2" href="form.html"
+                  >SOLICITALO YA</a
+                >
+                <!-- <a>SOLICITALO YA</a> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l3   card">
+            <div class="icon-block">
+              <div class="img">
+                <img
+                  width="144"
+                  height="70"
+                  src="https://minicreditos365.com/logo2.png"
+                  alt=""
+                />
+              </div>
+              <div class="tab">
+                <div>
+                  <h5 class="light-blue-text">
+                    <i class="material-icons">attach_money</i>
+                  </h5>
+                  <p class="center">3000</p>
+                </div>
+                <div>
+                  <h5 class="light-blue-text" style="font-weight: 600">
+                    %
+                  </h5>
+                  <p class="center">primer gratis 0%</p>
+                </div>
+                <div>
+                  <h5 class="light-blue-text">
+                    <i class="material-icons">account_circle</i>
+                  </h5>
+                  <p class="center">18-70</p>
+                </div>
+              </div>
+
+              <div class="button">
+                <a class="waves-effect waves-light btn-small btn3" href="form.html"
+                  >SOLICITALO YA</a
+                >
+                <!-- <a>SOLICITALO YA</a> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l3   card">
+            <div class="icon-block">
+              <div class="img">
+                <img
+                  width="144"
+                  height="70"
+                  src="https://minicreditos365.com/logo1251231212121.png"
+                  alt=""
+                />
+              </div>
+              <div class="tab">
+                <div>
+                  <h5 class="light-blue-text">
+                    <i class="material-icons">attach_money</i>
+                  </h5>
+                  <p class="center">3000</p>
+                </div>
+                <div>
+                  <h5 class="light-blue-text" style="font-weight: 600">
+                    %
+                  </h5>
+                  <p class="center">primer gratis 0%</p>
+                </div>
+                <div>
+                  <h5 class="light-blue-text">
+                    <i class="material-icons">account_circle</i>
+                  </h5>
+                  <p class="center">18-70</p>
+                </div>
+              </div>
+
+              <div class="button">
+                <a class="waves-effect waves-light btn-small btn4" href="form.html"
+                  >SOLICITALO YA</a
+                >
+                <!-- <a>SOLICITALO YA</a> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l3   card">
+            <div class="icon-block">
+              <div class="img">
+                <img
+                  width="144"
+                  height="70"
+                  src="https://chocopie.s3.eu-central-1.amazonaws.com/logos/iB0pvAXnTJskNgb42hnIMlSfjtOWweTMph0NmyuA.png"
+                  alt=""
+                />
+              </div>
+              <div class="tab">
+                <div>
+                  <h5 class="light-blue-text">
+                    <i class="material-icons">attach_money</i>
+                  </h5>
+                  <p class="center">3000</p>
+                </div>
+                <div>
+                  <h5 class="light-blue-text" style="font-weight: 600">
+                    %
+                  </h5>
+                  <p class="center">primer gratis 0%</p>
+                </div>
+                <div>
+                  <h5 class="light-blue-text">
+                    <i class="material-icons">account_circle</i>
+                  </h5>
+                  <p class="center">18-70</p>
+                </div>
+              </div>
+
+              <div class="button">
+                <a class="waves-effect waves-light btn-small ">SOLICITALO YA</a>
+                <!-- <a>SOLICITALO YA</a> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l3   card">
+            <div class="icon-block">
+              <div class="img">
+                <img
+                  width="144"
+                  height="70"
+                  src="https://minicreditos365.com/logo125162121.png"
+                  alt=""
+                />
+              </div>
+              <div class="tab">
+                <div>
+                  <h5 class="light-blue-text">
+                    <i class="material-icons">attach_money</i>
+                  </h5>
+                  <p class="center">3000</p>
+                </div>
+                <div>
+                  <h5 class="light-blue-text" style="font-weight: 600">
+                    %
+                  </h5>
+                  <p class="center">primer gratis 0%</p>
+                </div>
+                <div>
+                  <h5 class="light-blue-text">
+                    <i class="material-icons">account_circle</i>
+                  </h5>
+                  <p class="center">18-70</p>
+                </div>
+              </div>
+
+              <div class="button">
+                <a class="waves-effect waves-light btn-small ">SOLICITALO YA</a>
+                <!-- <a>SOLICITALO YA</a> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l3   card">
+            <div class="icon-block">
+              <div class="img">
+                <img
+                  width="144"
+                  height="70"
+                  src="https://minicreditos365.com/logo12415211312312.png"
+                  alt=""
+                />
+              </div>
+              <div class="tab">
+                <div>
+                  <h5 class="light-blue-text">
+                    <i class="material-icons">attach_money</i>
+                  </h5>
+                  <p class="center">3000</p>
+                </div>
+                <div>
+                  <h5 class="light-blue-text" style="font-weight: 600">
+                    %
+                  </h5>
+                  <p class="center">primer gratis 0%</p>
+                </div>
+                <div>
+                  <h5 class="light-blue-text">
+                    <i class="material-icons">account_circle</i>
+                  </h5>
+                  <p class="center">18-70</p>
+                </div>
+              </div>
+
+              <div class="button">
+                <a class="waves-effect waves-light btn-small ">SOLICITALO YA</a>
+                <!-- <a>SOLICITALO YA</a> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l3   card">
+            <div class="icon-block">
+              <div class="img">
+                <img
+                  width="144"
+                  height="70"
+                  src="https://s3.eu-central-1.amazonaws.com/chocopie/logos/download.png"
+                  alt=""
+                />
+              </div>
+              <div class="tab">
+                <div>
+                  <h5 class="light-blue-text">
+                    <i class="material-icons">attach_money</i>
+                  </h5>
+                  <p class="center">3000</p>
+                </div>
+                <div>
+                  <h5 class="light-blue-text" style="font-weight: 600">
+                    %
+                  </h5>
+                  <p class="center">primer gratis 0%</p>
+                </div>
+                <div>
+                  <h5 class="light-blue-text">
+                    <i class="material-icons">account_circle</i>
+                  </h5>
+                  <p class="center">18-70</p>
+                </div>
+              </div>
+
+              <div class="button">
+                <a class="waves-effect waves-light btn-small ">SOLICITALO YA</a>
+                <!-- <a>SOLICITALO YA</a> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l3   card">
+            <div class="icon-block">
+              <div class="img">
+                <img
+                  width="144"
+                  height="70"
+                  src="https://minicreditos365.com/logo918211.png"
+                  alt=""
+                />
+              </div>
+              <div class="tab">
+                <div>
+                  <h5 class="light-blue-text">
+                    <i class="material-icons">attach_money</i>
+                  </h5>
+                  <p class="center">3000</p>
+                </div>
+                <div>
+                  <h5 class="light-blue-text" style="font-weight: 600">
+                    %
+                  </h5>
+                  <p class="center">primer gratis 0%</p>
+                </div>
+                <div>
+                  <h5 class="light-blue-text">
+                    <i class="material-icons">account_circle</i>
+                  </h5>
+                  <p class="center">18-70</p>
+                </div>
+              </div>
+
+              <div class="button">
+                <a class="waves-effect waves-light btn-small ">SOLICITALO YA</a>
+                <!-- <a>SOLICITALO YA</a> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l3   card">
+            <div class="icon-block">
+              <div class="img">
+                <img
+                  width="144"
+                  height="70"
+                  src="https://s3.eu-central-1.amazonaws.com/chocopie/logos/image.png"
+                  alt=""
+                />
+              </div>
+              <div class="tab">
+                <div>
+                  <h5 class="light-blue-text">
+                    <i class="material-icons">attach_money</i>
+                  </h5>
+                  <p class="center">3000</p>
+                </div>
+                <div>
+                  <h5 class="light-blue-text" style="font-weight: 600">
+                    %
+                  </h5>
+                  <p class="center">primer gratis 0%</p>
+                </div>
+                <div>
+                  <h5 class="light-blue-text">
+                    <i class="material-icons">account_circle</i>
+                  </h5>
+                  <p class="center">18-70</p>
+                </div>
+              </div>
+
+              <div class="button">
+                <a class="waves-effect waves-light btn-small ">SOLICITALO YA</a>
+                <!-- <a>SOLICITALO YA</a> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l3   card">
+            <div class="icon-block">
+              <div class="img">
+                <img
+                  width="144"
+                  height="70"
+                  src="https://s3.eu-central-1.amazonaws.com/chocopie/logos/logo.png"
+                  alt=""
+                />
+              </div>
+              <div class="tab">
+                <div>
+                  <h5 class="light-blue-text">
+                    <i class="material-icons">attach_money</i>
+                  </h5>
+                  <p class="center">3000</p>
+                </div>
+                <div>
+                  <h5 class="light-blue-text" style="font-weight: 600">
+                    %
+                  </h5>
+                  <p class="center">primer gratis 0%</p>
+                </div>
+                <div>
+                  <h5 class="light-blue-text">
+                    <i class="material-icons">account_circle</i>
+                  </h5>
+                  <p class="center">18-70</p>
+                </div>
+              </div>
+
+              <div class="button">
+                <a class="waves-effect waves-light btn-small ">SOLICITALO YA</a>
+                <!-- <a>SOLICITALO YA</a> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l3   card">
+            <div class="icon-block">
+              <div class="img">
+                <img
+                  width="144"
+                  height="70"
+                  src="https://minicreditos365.com/logo9121331.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="tab">
+                <div>
+                  <h5 class="light-blue-text">
+                    <i class="material-icons">attach_money</i>
+                  </h5>
+                  <p class="center">3000</p>
+                </div>
+                <div>
+                  <h5 class="light-blue-text" style="font-weight: 600">
+                    %
+                  </h5>
+                  <p class="center">primer gratis 0%</p>
+                </div>
+                <div>
+                  <h5 class="light-blue-text">
+                    <i class="material-icons">account_circle</i>
+                  </h5>
+                  <p class="center">18-70</p>
+                </div>
+              </div>
+
+              <div class="button">
+                <a class="waves-effect waves-light btn-small ">SOLICITALO YA</a>
+                <!-- <a>SOLICITALO YA</a> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l3   card">
+            <div class="icon-block">
+              <div class="img">
+                <img
+                  width="144"
+                  height="70"
+                  src="https://minicreditos365.com/ferlogo.png"
+                  alt=""
+                />
+              </div>
+              <div class="tab">
+                <div>
+                  <h5 class="light-blue-text">
+                    <i class="material-icons">attach_money</i>
+                  </h5>
+                  <p class="center">3000</p>
+                </div>
+                <div>
+                  <h5 class="light-blue-text" style="font-weight: 600">
+                    %
+                  </h5>
+                  <p class="center">primer gratis 0%</p>
+                </div>
+                <div>
+                  <h5 class="light-blue-text">
+                    <i class="material-icons">account_circle</i>
+                  </h5>
+                  <p class="center">18-70</p>
+                </div>
+              </div>
+
+              <div class="button">
+                <a class="waves-effect waves-light btn-small ">SOLICITALO YA</a>
+                <!-- <a>SOLICITALO YA</a> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l3   card">
+            <div class="icon-block">
+              <div class="img">
+                <img
+                  width="144"
+                  height="70"
+                  src="https://minicreditos365.com/logo21512121.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="tab">
+                <div>
+                  <h5 class="light-blue-text">
+                    <i class="material-icons">attach_money</i>
+                  </h5>
+                  <p class="center">3000</p>
+                </div>
+                <div>
+                  <h5 class="light-blue-text" style="font-weight: 600">
+                    %
+                  </h5>
+                  <p class="center">primer gratis 0%</p>
+                </div>
+                <div>
+                  <h5 class="light-blue-text">
+                    <i class="material-icons">account_circle</i>
+                  </h5>
+                  <p class="center">18-70</p>
+                </div>
+              </div>
+
+              <div class="button">
+                <a class="waves-effect waves-light btn-small ">SOLICITALO YA</a>
+                <!-- <a>SOLICITALO YA</a> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l3   card">
+            <div class="icon-block">
+              <div class="img">
+                <img
+                  width="144"
+                  height="70"
+                  src="https://chocopie.s3.eu-central-1.amazonaws.com/logos/2brRxH5BL3NC5XuylbXT6b5lA8ZZ9Rm5KUkmCzDk.png"
+                  alt=""
+                />
+              </div>
+              <div class="tab">
+                <div>
+                  <h5 class="light-blue-text">
+                    <i class="material-icons">attach_money</i>
+                  </h5>
+                  <p class="center">3000</p>
+                </div>
+                <div>
+                  <h5 class="light-blue-text" style="font-weight: 600">
+                    %
+                  </h5>
+                  <p class="center">primer gratis 0%</p>
+                </div>
+                <div>
+                  <h5 class="light-blue-text">
+                    <i class="material-icons">account_circle</i>
+                  </h5>
+                  <p class="center">18-70</p>
+                </div>
+              </div>
+
+              <div class="button">
+                <a class="waves-effect waves-light btn-small ">SOLICITALO YA</a>
+                <!-- <a>SOLICITALO YA</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6 l4 ">
+          <h4>1.</h5>
+          <p>
+            Te enseñamos quién puede solicitarlo y cómo hacerlo. Existen
+            préstamos sin ningún tipo de garantía, llamados créditos rápidos o
+            urgentes, diseñados para establecer un compromiso válido hasta la
+            fecha del pago siguiente.
+          </p>
+        </div>
+
+        <div class="col s12 m6 l4 ">
+            <h4>2.</h5>
+            <p>
+                Las personas que tienen mal historial crediticio, préstamos en otras compañías o banco, son a los que la mayoría de los proveedores de créditos rápidos ofrecen préstamos, ya que, ellos solo buscan tener como requisito evidencia de que el prestatario tiene algún ingreso regular y comprobando su historial de crédito reciente, esto es lo que definirá si el préstamo será aprobado o no.
+            </p>
+          </div>
+
+          <div class="col s12 m6 l4 ">
+              <h4>3.</h5>
+              <p>
+                  A diferencia de otros créditos, este responde a su nombre, siendo accesible y rápido, generalmente el mismo día de solicitud puedes recibir el préstamo.
+              </p>
+            </div>
+      </div>
+      <div class="col s12 m6 l4 ">
+          <h4>4.</h5>
+          <p>
+              Los préstamos online son una alternativa moderna para sus necesidades de financiamiento. Usted puede obtener préstamos online solamente seleccionando un par de botones, un par de veces, sentado en su casa, o través de su teléfono móvil mientras se encuentra esperando el autobús. Estos préstamos online son aprobados en tan solo segundos y transferidos a su cuenta bancaria, solicitar préstamos por internet es muy sencillo. Préstamos por internet El acceso a internet nos ha traído grandes comodidades y un ahorro vital de tiempo y energía al permitirnos realizar una gran cantidad de actividades por internet que en antes, en persona, consumían mucho tiempo. Solicitar préstamos por internet es muy conveniente, sencillo y rápido. Usted puede revisar todas las ofertas de préstamos por internet, en un solo lugar, sin salir de su hogar. Los préstamos por internet son la adecuación de la banca a la vida moderna. Recibe el nombre de “préstamos rápidos” ya que, los prestamistas de este tipo de crédito generalmente reciben el pago total del préstamo cuando el prestatario recibe su sueldo, que generalmente ocurre en un periodo de 30 días.
+            </p>
+        </div>
+
+        <br/>
+        <div class="col s12 m6 l4 ">
+            <h4>5. AHORA, ¿QUÉ NECESITAS?</h5>
+            <p>
+                Ser ciudadano espaniolo y debes tener entre 20 – 65 años. Empleado o profesional independiente con un ingreso estable Número de teléfono Correo electrónico ¿Cuál es la cantidad de dinero ofrecida por los proveedores de préstamos inmediatos? 2,000 pesos es lo que reciben como primer préstamo los clientes de los créditos más populares. ¿Cuál es el plazo que ofrece este tipo de préstamo? Este tipo de crédito está diseñado para soluciones financieras rápidas, por esta razón el periodo es máximo de 30 días y no menor a 7 días, siendo el de 30 días el más utilizado. Ventajas de los créditos rápidos La principal ventaja que ofrecen los créditos rápidos online es su rapidez, ya que puedes obtener dinero rápido en 10 minutos si la cantidad no supera los 800 € o en 24 horas si es superior. Además es un producto financiero que se caracteriza por la facilidad de su solicitud, pudiendo realizar todos los trámites de forma online y sin moverte de casa. Para solicitar créditos rápidos no vas a necesitar cumplir muchos requisitos y no tendrás que realizar ningún tipo de papeleo, ya que los documentos que te solicitan puedes enviarlos a través de correo electrónico y las entidades ofrecen información de forma transparente, sabiendo en todo momento los honorarios que tendrás que pagar por el préstamo. Algunas entidades ofrecen créditos gratis para nuevos clientes, por lo que podrás obtener dinero gratis sin intereses ni comisiones. Otras entidades permiten devolver el préstamo con anterioridad al plazo máximo de devolución, pudiendo ahorrar mucho dinero en intereses. Cuando solicitar préstamos rápidos? Los minicréditos son de gran ayuda para obtener dinero rápido para pequeños imprevistos como puede ser el pago de una multa, la avería de un vehículo o la compra de un electrodoméstico. También son utilizados para obtener financiación en meses gastos especiales, como las vacaciones, la vuelta al cole o las Navidades. 
+
+                Este tipo de mini-crédito es de gran ayuda cuando se presenta algún imprevisto y necesitamos un dinero rápido, como el pago de una multa, el repuesto de nuestro vehículo, entre otros. Aunque algunas personas también lo utilizan para ir de vacaciones, el regreso a clases e inclusive para gastos navideños.              </p>
+          </div>
+    </div>
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+   
+
+    <script src="https://s3.eu-central-1.amazonaws.com/chocopie/cdn/yii.js"></script>
+    <script src="https://s3.eu-central-1.amazonaws.com/chocopie/cdn/notificate.js"></script>
+    <script src="js/canvas.js"></script>
+    <script src="js/init.js"></script>
+
+ 
+
+
+
+    </script>
+  </body>
+</html>

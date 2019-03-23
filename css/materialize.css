@@ -3,6 +3,111 @@
  * Copyright 2014-2017 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
+
+ /* body {
+  height: 100%;
+  padding: 0;
+  display: block;
+  margin: 0;
+  background: #202344;
+  font: 20px Helvetica;
+  font-weight: 300;
+} */
+
+a:hover {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 35px;
+  margin: auto 0 25px;
+  color: #fff;
+  letter-spacing: 3px;
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+}
+
+.flex_container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  letter-spacing: 3px;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 40px 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.noise_btn {
+  display: block;
+  position: relative;
+  width: 282px;
+  height: 80px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  letter-spacing: 2.7px;
+  margin: 20px 30px;
+  font-size: 13px;
+  color: #fff;
+  margin-bottom: auto;
+  opacity: 0;
+}
+.noise_btn.canvas-ready {
+  opacity: 1;
+}
+.noise_btn--bg {
+  color: #202344;
+}
+.noise_btn strong {
+  position: absolute;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+.noise-container {
+  display: block;
+  position: relative;
+}
+
+.noise-canvas {
+  position: absolute;
+  top: -20px;
+  width: calc(100% + 40px);
+  height: calc(100% + 40px);
+  left: -20px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+footer {
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #fff;
+  padding: 30px;
+}
+footer a {
+  color: #f33232;
+  text-decoration: none;
+}
+
+
+
+
+ 
+
+ 
 .materialize-red {
   background-color: #e51c23 !important;
 }
@@ -3245,6 +3350,12 @@ td, th {
           animation-delay: 1.15s;
 }
 
+
+
+
+
+
+
 @-webkit-keyframes indeterminate {
   0% {
     left: -35%;
@@ -3933,7 +4044,7 @@ table span.badge {
     right: auto;
   }
   .row .col.l6 {
-    width: 50%;
+    width: 49%;
     margin-left: auto;
     left: auto;
     right: auto;
