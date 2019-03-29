@@ -94,12 +94,7 @@ setTimeout(function(){
 }
 $(document).ready(function(){
   setTimeout(animate,1)
-  
 setInterval(animate, 4500);
-// var animation = setInterval(animate, 4500);
-// $(document).on('scroll', function(){
-//     clearInterval(animation);
-//   });
 });
 
 $('.overlay').click(function(){
